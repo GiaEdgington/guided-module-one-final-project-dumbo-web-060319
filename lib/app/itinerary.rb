@@ -5,4 +5,10 @@ class Itinerary < ActiveRecord::Base
     #------
     #below join between itinerary and movie_scene through itinerary_movie_scenes
     has_many :movie_scenes, through: :itinerary_movie_scenes
+
+
+
+    def create_itinerary_from_movie_scene(movie_scene)
+        ItineraryMovieScene.create(itinerary_id: self.id, movie_scene_id: movie_scene.id)
+    end
 end

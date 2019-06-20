@@ -5,7 +5,7 @@ MovieScene.destroy_all
 Itinerary.destroy_all
 ItineraryMovieScene.destroy_all
 
-john_wick = Movie.create(title: "John Wick")
+john_wick = Movie.create(title: "John Wick", city: "New York")
 
 #movie_scenes
 marcus_home_scene = MovieScene.create(scene_description: "Marcus’s House")
@@ -40,7 +40,7 @@ johns_house_location.movie_scenes << johns_house_scene
 final_scene_location.movie_scenes << final_scene
 
 #movie
-ghostbusters = Movie.create(title: "Ghostbusters")
+ghostbusters = Movie.create(title: "Ghostbusters", city: "New York")
 
 #movie_scenes
 hq_scene = MovieScene.create(scene_description: "Headquarters" )
@@ -65,7 +65,7 @@ restaurant_location.movie_scenes << restaurant_scene
 spook_central.movie_scenes << spook_central_scene
 
 #movie
-when_harry_met_sally = Movie.create(title: "When Harry Met Sally")
+when_harry_met_sally = Movie.create(title: "When Harry Met Sally", city: "New York")
 
 #movie_scenes
 batting_cage_scene = MovieScene.create(scene_description: "Batting cage scene with Harry and Jess")
@@ -85,7 +85,7 @@ deli_location.movie_scenes << deli_scene
 
 
 #movie
-men_in_black = Movie.create(title: "Men in Black")
+men_in_black = Movie.create(title: "Men in Black", city: "New York")
 
 #movie_scenes
 hq_men_in_black = MovieScene.create(scene_description: "Headquarters")
@@ -110,7 +110,7 @@ restaurant_good_kitchen_location.movie_scenes << restaurant_good_kitchen
 
 #movie
 
-roman_holiday = Movie.create(title: "Roman Holiday")
+roman_holiday = Movie.create(title: "Roman Holiday", city: "Rome")
 
 #movie_scenes
 on_the_scooter = MovieScene.create(scene_description: "Bradley and the princess on the scooter")
@@ -137,7 +137,7 @@ driving_off_location.movie_scenes << driving_off_scene
 
 #movie
 
-talented_mr_ripley = Movie.create(title: "The Talented Mr. Ripley")
+talented_mr_ripley = Movie.create(title: "The Talented Mr. Ripley", city: "Rome")
 meeting_scene = MovieScene.create(scene_description: "Freddie and Ripley meet in Rome")
 
 piazza_navona = Location.create(location_title: "Piazza Navona", location_address: "Rome, Italy", city: "Rome")
@@ -159,7 +159,7 @@ ripley_jazz_club.movie_scenes << ripley_club_scene
 
 #movie
 
-lizzie_mcguire = Movie.create(title: "The Lizzie McGuire Movie")
+lizzie_mcguire = Movie.create(title: "The Lizzie McGuire Movie", city: "Rome")
 
 fountain_scene = MovieScene.create(scene_description: "Lizzie is approached by Italian pop star Paolo, who mistakes her for his singer partner, Isabella")
  
@@ -184,7 +184,7 @@ colosseum.movie_scenes << concert_scene
 
 #movie
 
-time_travelers_wife = Movie.create(title: "The Time Traveler’s Wife")
+time_travelers_wife = Movie.create(title: "The Time Traveler’s Wife", city: "Chicago")
 meadowlark_scene = MovieScene.create(scene_description: "Claire’s childhood home, where at six years old she first meets Henry after he travels back in time and appears in the meadow")
 
 meadowlark_house = Location.create(location_title: "Meadowlark House", location_address: "Chicago, Illinois", city: "Chicago")
@@ -208,7 +208,7 @@ brookfield_zoo.movie_scenes << zoo_scene
 
 #movie
 
-devil_wears_prada = Movie.create(title: "The Devil Wears Prada")
+devil_wears_prada = Movie.create(title: "The Devil Wears Prada", city: "New York")
 bubbys_scene = MovieScene.create(scene_description: "Andy has a night out with her friends at their usual spot, Bubby’s Restaurant")
 
 bubbys_restaurant = Location.create(location_title: "Bubbys Restaurant", location_address: "120 Hudson Street and North Moore Street, New York", city: "New York")
@@ -230,7 +230,7 @@ mirandas_home.movie_scenes << townhouse_scene
 
 #movie
 
-la_la_land = Movie.create(title: "La La Land")
+la_la_land = Movie.create(title: "La La Land", city: "Los Angeles")
 park_scene = MovieScene.create(scene_description: "Mia and Sebastian perform ‘A Lovely Night’ after they reconnect at a Hollywood Hills party")
 
 cathys_corner = Location.create(location_title: "Cathy’s Corner", location_address: "Griffith Park, Los Angeles, California", city: "Los Angeles")
@@ -252,7 +252,7 @@ rey_theatre.movie_scenes << sebastian_scene
 
 #movie
 
-eternal_sunshine = Movie.create(title: "Eternal Sunshine of the Spotless Mind")
+eternal_sunshine = Movie.create(title: "Eternal Sunshine of the Spotless Mind", city: "New York")
 montauk_scene = MovieScene.create(scene_description: "Joel decides to skip work, propelled by a powerful urge to take the train to Montauk")
 
 montauk = Location.create(location_title: "Montauk Station", location_address: "Edgemere Rd, Montauk, New York", city: "New York")
@@ -274,7 +274,7 @@ lacuna_inc.movie_scenes << lacuna_inc_scene
 
 #movie
 
-big_lebowski = Movie.create(title: "The Big Lebowski")
+big_lebowski = Movie.create(title: "The Big Lebowski", city: "Los Angeles")
 bowling_alley =MovieScene.create(scene_description: "The bowling alley where the Dude hangs out with his friends")
 
 hollywood_lanes = Location.create(location_title: "Hollywood Star Lanes", location_address: "5227 Santa Monica Boulevard, Los Angeles, California", city: "Los Angeles") 
@@ -296,7 +296,7 @@ lebowski_restaurant.movie_scenes << the_cafe
 
 #movie
 
-nightcrawler = Movie.create(title: "Nightcrawler")
+nightcrawler = Movie.create(title: "Nightcrawler", city: "Los Angeles")
 
 
 nightcrawler_mullholland = MovieScene.create(scene_description: "Where Lou alters a crash site to have better framing for his ‘money shot’")
@@ -320,20 +320,20 @@ dinahs_restaurant2.movie_scenes << nightcrawler_restaurant
 
 #users
 
-franchely = User.create(name: “Franchely”)
-gia = User.create(name: “Gia”)
-lundy = User.create(name: “Lundy”)
-danny = User.create(name: “Danny”)
+franchely = User.create(name: "Franchely")
+gia = User.create(name: "Gia")
+lundy = User.create(name: "Lundy")
+danny = User.create(name: "Danny")
 
 #itinearies
 
-itinerary_ny = Itinerary.create(itinerary_name: "New York Movie Trip")
-itinerary_chicago = Itinerary.create(itinerary_name: "Chicago Movie Trip")
-itinerary_rome = Itinerary.create(itinerary_name: "Rome Movie Trip")
-itinerary_la = Itinerary.create(itinerary_name: "Los Angeles Movie Trip")
+# itinerary_ny = Itinerary.create(itinerary_name: "New York Movie Trip")
+# itinerary_chicago = Itinerary.create(itinerary_name: "Chicago Movie Trip")
+# itinerary_rome = Itinerary.create(itinerary_name: "Rome Movie Trip")
+# itinerary_la = Itinerary.create(itinerary_name: "Los Angeles Movie Trip")
 
-#itinerary_movie_scenes_ny
-itinerary_ny.itinerary_movie_scenes << MovieScenes.all.select { |movie_scene| movie_scene.locations.city == "New York"
+# #itinerary_movie_scenes_ny
+# itinerary_ny.itinerary_movie_scenes << MovieScenes.all.select { |movie_scene| movie_scene.locations.city == "New York"
 
 
 
